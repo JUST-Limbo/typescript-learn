@@ -2,19 +2,28 @@
   "name": "typescript-learn",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JUST-Limbo/typescript-learn.git"
-  },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "szy"
+  ],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JUST-Limbo/typescript-learn/issues"
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "html-webpack-plugin": "^4.3.0",
+    "ts-loader": "^7.0.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
-  "homepage": "https://github.com/JUST-Limbo/typescript-learn#readme"
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
 }
