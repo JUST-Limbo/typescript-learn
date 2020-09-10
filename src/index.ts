@@ -1,2 +1,1 @@
-let num:number = 123
-alert('hello')
+import './example/basic-type'
